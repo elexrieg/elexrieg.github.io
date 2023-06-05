@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="BSOD's Hub">
+        <meta name="description" content="This website serves as a documentation of my journey as a developer, where I share my experiences and insights, showcase
+        my coding projects, and blog about various aspects of life.">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://bsod2528.me/">
+        <meta property="og:title" content="BSOD's Hub">
+        <meta property="og:description" content="This website serves as a documentation of my journey as a developer, where I share my experiences and insights,
+        showcase my coding projects, and blog about various aspects of life.">
+        <meta property="og:image" content="">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://bsod2528.me/">
+        <meta property="twitter:title" content="BSOD's Hub">
+        <meta property="twitter:description" content="This website serves as a documentation of my journey as a developer, where I share my experiences and insights,
+        showcase my coding projects, and blog about various aspects of life.">
+        <meta property="twitter:image" content="">
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4410608625085719" crossorigin="anonymous"></script>
+
+        <link rel="icon" type="image/gif" href="../../../media/bsod.gif">
+        <link rel="stylesheet" type="text/css" href="../../../main.css">
+        <title>BSOD's Hub</title>
+    </head>
+    <body>
+        <nav class="nav-bar">
+            <div class="hub-text no-href-styles"><a href="../../../index.html">BSOD's Hub</a></div>
+            <ul class="nav-links">
+                <div class="nav-menu">
+                    <li><a href="../../about_me.html" class="no-href-styles">About Me</a></li>
+                    <li><a href="../../projects.html" class="no-href-styles">Projects</a></li>
+                    <li><a href="../../blog.html" class="no-href-styles">Blog</a></li>
+                    <li><a href="../../contact.html" class="no-href-styles">Contact Me</a></li>
+                    <li><a href="https://www.github.com/bsod2528" class="no-href-styles" target="_blank">Github</a></li>
+                </div>
+            </ul>
+        </nav>
+        <div class="on-this-page">
+            <h3 class="on-this-page-heading">On This Page</h3>
+            <li><a href="#intro" class="no-href-styles">Who is Geralt?</a></li>
+            <li><a href="#setup" class="no-href-styles">Setup</a></li>
+            <li><a href="#psql" class="no-href-styles">PostgreSQL</a></li>
+            <li><a href="#py-env" class="no-href-styles">Python Env.</a></li>
+            <li><a href="#launch-geralt" class="no-href-styles">Running Geralt</a></li>
+            <li><a href="#what-is-a-cog" class="no-href-styles">What is a Cog?</a></li>
+        </div>
+        <div class="side-nav">
+            <h3>Deep Dive</h3>
+            <li><a href="#intro" class="no-href-styles">Who is Geralt?</a></li>
+            <li><a href="#setup" class="no-href-styles">Setup</a></li>
+            <li><a href="./cogs.html" class="no-href-styles">Cogs Present</a></li>
+            <li><a href="./privacy_policy.html" class="no-href-styles">Privacy Policy</a></li>
+        </div>
+        <div class="content">
+            <div class="intro-one">
+                <div class="intro-one-box">
+                    <div class="intro-one-text">
+                        <p>Geralt</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section">
+                <h2 class="heading" id="intro"><a href="#intro" class="no-href-styles">Who is Geralt?</a></h2>
+                <p class="indent the-white-para">
+                    A simple Discord bot written in Python using the <a href="https://github.com/Rapptz/discord.py">discord.py</a> API wrapper. Named after the protagonist
+                    <a href="https://www.wikiwand.com/en/Geralt_of_Rivia">Geralt of Rivia</a>. On the contrary, there is nothing related to the Witcher in this bot. Geralt provides a
+                    handful of easy-to-use yet robust commands, making your life on Discord much easier.
+                </p>
+                <p class="indent the-white-para">
+                    Started off as a small project to impress my friends from school which then led to a full-fleged hobby to develop the bot with many features and become a very good
+                    programmer. Till date, Geralt is being maintained and improved. The following will give you proper instructions for setting up the bot if you are going to run your
+                    own instance.
+                </p>
+                <div class="info">
+                    The default prefix is .g
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="section">
+                <h2 class="heading" id="setup"><a href="#setup" class="no-href-styles">Setup</a></h2>
+                <div class="the-white-para">
+                    <p class="indent">
+                        Clone the repository using git, if you're to lazy to go to github, here it is - <code>git clone https://github.com/bsod2528/Geralt.git</code>. Then, you will be
+                        needing:
+                        <li>Python 3.8 or more</li>
+                        <li>PostgreSQL</li>
+                        <li>And a bunch of packages - <a href="../../../extra/geralt_requirements.txt">requirements.txt</a></li>
+                    </p>
+                </div>
+                <h3 class="heading" id="psql"><a href="#psql" class="no-href-styles">PostgreSQL</a></h3>
+                <div class="the-white-para">
+                    <p class="indent">You will be needing the following:</p>
+                    <li>database named <code>geralt</code>.</li>
+                    <li>role named <code>av</code> with maximum permissions.</li>
+                    <li>and a bunch of tables - <a href="../../../extra/tables.sql">tables.sql</a></li>
+                </div>
+                <h3 class="heading" id="py-env"><a href="#py-env" class="no-href-styles">Python Env.</h3>
+                <p class="indent the-white-para">
+                    Create an environment by running <code>py -m venv venv</code> and install dependencies in requirements.txt inside a folder called Geralt.
+                </p>
+                <h3 class="heading" id="launch-geralt"><a href="#launch-geralt" class="no-href-styles">Running Geralt</a></h3>
+                <p class="indent the-white-para">
+                    Once all the above requirements are met, you will be able to run your very own instance of Geralt. To run him, simply double-click the <code>geralt.py</code> on your
+                    computer if you're locally hosting else run the necessary command to run if its on a vps.
+                </p>
+            </div>
+            <hr class="divider">
+            <div class="section">
+                <h2 class="heading" id="what-is-a-cog"><a href="#what-is-a-cog" class="no-href-styles">What is a Cog?</a></h2>
+                <p class="indent the-white-para">
+                    A "Cog" is the baseclass for all commands of a certain category to be present in. Consider it like a category of commands, and each command would be the method
+                    inside it. In Geralt, I've created a total of 11 cogs in which 2 are listeners. We shall now dive right into them.
+                </p>
+                <p class="indent the-white-para">
+                    The next page will showcase all the cogs present. Following that will be a full-fledged description on each cog and the commands present.
+                </p>
+            </div>
+            <div class="pagination">
+                <div class="previous-page"><a href="../../projects.html" class="no-href-styles">Projects</a></div>
+                <div class="next-page"><a href="./cogs.html" class="no-href-styles">Cogs</a></div>
+            </div>
+        </div>
+        <div class="empty-space"></div>
+        <button onclick="scrollBackToTop()" id="my-button" title="Got to Top">Top</button>
+        <script src="../../../js/scroll.js" type="text/javascript"></script>
+        <div class="footer">
+            <hr class="divider">
+            <p>With 💖 by bsod2528 | © BSOD's Hub 2023</p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="bsod's hub">
+        <meta name="description" content="This website serves as a documentation of my journey as a developer, where I share my experiences and insights, showcase
+        my coding projects, and blog about various aspects of life.">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://bsod2528.me/">
+        <meta property="og:title" content="bsod's hub">
+        <meta property="og:description" content="This website serves as a documentation of my journey as a developer, where I share my experiences and insights,
+        showcase my coding projects, and blog about various aspects of life.">
+        <meta property="og:image" content="">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://bsod2528.me/">
+        <meta property="twitter:title" content="bsod's hub">
+        <meta property="twitter:description" content="This website serves as a documentation of my journey as a developer, where I share my experiences and insights,
+        showcase my coding projects, and blog about various aspects of life.">
+        <meta property="twitter:image" content="">
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4410608625085719" crossorigin="anonymous"></script>
+
+        <link rel="icon" type="image/gif" href="../../../media/bsod.gif">
+        <link rel="stylesheet" type="text/css" href="../../../main.css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/base16/material-darker.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
+        <title>BSOD's Hub</title>
+    </head>
+    <body>
+        <nav class="nav-bar">
+            <div class="hub-text no-href-styles"><a href="../../../index.html">BSOD's Hub</a></div>
+            <ul class="nav-links">
+                <div class="nav-menu">
+                    <li><a href="../../about_me.html" class="no-href-styles">About Me</a></li>
+                    <li><a href="../../projects.html" class="active-page no-href-styles">Projects</a></li>
+                    <li><a href="../../blog.html" class="no-href-styles">Blog</a></li>
+                    <li><a href="../../contact.html" class="no-href-styles">Contact Me</a></li>
+                    <li><a href="https://www.github.com/BSOD2528" class="no-href-styles" target="_blank">Github</a></li>
+                </div>
+            </ul>
+        </nav>
+        <div class="on-this-page">
+            <h3>On This Page</h3>
+            <li><a href="#oop-involved" class="no-href-styles">How is OOP Involved?</a></li>
+            <li><a href="#subclassing-bot" class="no-href-styles">Subclassing Bot</a></li>
+            <li><a href="#creating-cogs" class="no-href-styles">Creating Cogs</a></li>
+            <li><a href="#creating-commands" class="no-href-styles">Creating Commands</a></li>
+            <li><a href="#application-commands" class="no-href-styles">Creating App Commands</a></li>
+        </div>
+        <div class="side-nav">
+            <h3>Deep Dive</h3>
+            <li><a href="./bot.html" class="no-href-styles">Beach-Bot</a></li>
+            <li><a href="./working.html" class="no-href-styles">Working of Beach-Bot</a></li>
+            <li><a href="./dpy.html" class="no-href-styles">Discord.py Basics</a></li>
+            <li><a href="./components.html" class="no-href-styles">Components</a></li>
+        </div>
+        <div class="content">
+            <div class="section">
+                <h2 class="heading" id="oop-involved"><a href="#oop-involved" class="no-href-styles">How is OOP Involved?</a></h2>
+                <div class="info">
+                    Learn more on OOP:&nbsp;<a href="https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc" target="_blank">Click Here!</a>
+                </div>
+                <br>
+                <div class="info">
+                    Refer the documentation for the classes and methods mentioned accordingly:&nbsp;<a href="https://discordpy.readthedocs.io" target="_blank">discord.py docs</a>
+                </div>
+                <p class="indent the-white-para">
+                    TLDR - a class is a template which includes mutitple variables and functions. A subclass is when you're creating another class which inherits from the main class.
+                    Kind of like, creating another template which is based of another template. Upon subclassing, you will be able to access all the functions and variables in the
+                    parent class.
+                </p>
+                <p class="indent the-white-para">
+                    When that template is being used in the program, that is called as an object. To create an object, you will be "instantiating" the class.
+                </p>
+                <p class="indent the-white-para">
+                    There, that is OOP in 2 paragraphs. You will be using this throughout your development in discord.py
+                </p>
+                <p class="indent the-white-para">
+                    Everything is considered as an instance of a parent object. The library uses the modern <code>async</code>/<code>await</code> syntax which helps in running
+                    multiple operations at the same time. To learn more about asynchronous programming, <a href="https://realpython.com/python-async-features/" target="_blank">click here!</a>.
+                </p>
+                <p class="indent the-white-para">
+                    The client, cogs, all the views present (buttons and select menus) are all objects in which their instances are called multiple times on running a command.
+                    Each command, regardless of it's type (normal text or app commands) is a method of the object.
+                </p>
+            </div>
+            <hr class="divider">
+            <div class="section">
+                <h2 class="heading" id="subclassing-bot"><a href="#subclassing-bot" class="no-href-styles">Subclassing Bot</a></h2>
+                <p class="indent the-white-para">
+                    The <a href="https://discordpy.readthedocs.io/en/stable/ext/commands/api.html#bot" target="_blank"><code>discord.ext.commands.Bot</code></a>
+                    is a subclass of the <a href="https://discordpy.readthedocs.io/en/stable/api.html#discord.Client" target="_blank"><code>discord.Client</code></a>
+                    class which is further utilised to connect to Discord's
+                    Websoocket and API. Since it's a subclass, you can access the attributes and methods present in <code>discord.Client</code>.
+                </p>
+                <p class="indent the-white-para">
+                    Now, subclassing the bot isn't necessary but it allows one to add more functionality to it, such as custom listeners, event handlers, methods, etc. This can be
+                    simply by following the below.
+                </p>
+                <pre>
+                    <code class="language-python">
+from discord.ext import commands
+
+
+class BaseBot(commands.Bot):
+    def __init__(self, *args, **kwargs) -> None:
+        super().__init__(...)
+
+                    </code>
+                </pre>
+                <p class="indent the-white-para">
+                    You can further carry on by passing in the necessary arguments and create your very own bot attributes which can be used in any part of the entire program.
+                    A good example for a bot subclass is in my Geralt bot. Check that out too <a href="https://github.com/bsod2528/Geralt/blob/stellar-v2/geralt/bot.py#L97" target="_blank">here</a>!
+                </p>
+            </div>
+            <hr class="divider">
+            <div class="section">
+                <h2 class="heading" id="creating-cogs"><a href="#creating-cogs" class="no-href-styles">Creating Cogs</a></h2>
+                <p class="indent the-white-para">
+                    As mentioned before, creating cogs is basically creting a sub-class of the <a href="https://discordpy.readthedocs.io/en/stable/ext/commands/api.html#cog" target="_blank">
+                    <code>commands.Cog</code></a> class. The following codeblock gives an example in creating one.
+                </p>
+                <pre>
+                    <code class="language-python">
+from discord.ext import commands
+
+from ...bot import BaseBot
+
+
+class Fun(commands.Cog):
+    def __init__(self, bot: BaseBot) -> None:
+        self.bot = bot
+                    </code>
+                </pre>
+
+                <p class="indent the-white-para">
+                    In the above, we first import commands. In the <code>__init__</code> method, we pass in <code>bot</code>. We then make an attribute called self.bot which gets
+                    the bot variable that we pass in. We typehint bot with our base bot subclass in order to improve code readability, easy detection of type errors, and many more
+                    points.
+                </p>
+                <p class="indent the-white-para">
+                    In order for the bot to recognise the bot, i.e., load the extension on startup we do the following:
+                </p>
+                <pre>
+                    <code class="language-python">
+async def setup(bot: BaseBot) -> None:
+    await bot.add_cog(CogName(bot))
+                    </code>
+                </pre>
+                <p class="indent the-white-para">
+                    We utilise the <a href="https://discordpy.readthedocs.io/en/stable/ext/commands/api.html?highlight=add_cog#discord.ext.commands.Bot.add_cog" target="_blank">bot.add_cog</a>
+                    method in order to achieve this.
+                </p>
+            </div>
+            <hr class="divider">
+            <div class="section">
+                <h2 class="heading" id="creating-commands"><a href="#creating-commands" class="no-href-styles">Creating Commands</a></h2>
+                <p class="indent the-white-para">
+                    Commands can be created by using the <a href="https://discordpy.readthedocs.io/en/stable/ext/commands/api.html#discord.ext.commands.Command" target="_blank"><code>@command</code></a>
+                    decorator. A decorator is basically a function which takes another function as input and returns another function.
+                </p>
+                <p class="indent the-white-para">
+                    An example below showcases on creating a simple command inside a cog. Remember to add <code>self</code> as the first parameter for each command as they're
+                    all methods of a cog!
+                </p>
+                <pre>
+from typing import Optional
+
+from discord import Message
+from discord.ext import commands
+
+from ...bot import BaseBot
+
+
+class Fun(commands.Cog):
+    def __init__(self, bot: BaseBot) -> None:
+        self.bot = bot
+
+    @commands.command(name="spoiler", aliases=["sp"], brief="Spoiler a Message!")
+    async def spoiler(
+        self, ctx: commands.Context, *, message: str
+    ) -> Optional[Message]:
+        """Spoil a message!"""
+        return await ctx.send("".join(f"||{var}||" for var in message))
+                    </code>
+                </pre>
+                <p class="indent the-white-para">
+                    We first use the <code>@command</code> decorator. We name the function as per the name of the command. The function name will be taken as the name of the
+                    command if no <code>name</code> argument is passed into the decorator. The doc string below is the main help string that will be printed when running the help
+                    command for it.
+                </p>
+                <p class="indent the-white-para">
+                    Remember, aliases argument is always a list of strings 🤝. To create a command outside of a cog, we do the following.
+                </p>
+                <pre>
+                    <code class="language-python">
+from typing import Optional
+
+import discord
+from discord.ext import commands
+
+intents = discord.Intents.default()
+intents.message_content = True
+bot = commands.Bot(command_prefix=".b", intents=intents)
+
+
+@bot.command(name="ping", aliases=["pong"])
+async def ping(ctx) -> Optional[discord.Message]:
+    """Pong!"""
+    await ctx.send("pong")
+
+
+bot.run("token")
+                    </code>
+                </pre>
+            </div>
+            <hr class="divider">
+            <div class="section">
+                <h2 class="heading" id="application-commands"><a href="#application-commands" class="no-href-styles">Creating App Commands</a></h2>
+                <p class="indent the-white-para">
+                    There are totally three different types of application commands, slash commands, user based context menu commands, and message based context commands.
+                    We shall see how each commands are created in detailed.
+                </p>
+                <h3 class="heading" id="slash-commands"><a href="#slash-commands" class="no-href-styles">Slash Commands</a></h3>
+                <div class="info">
+                    To learn more in detail, click on this link:&nbsp;<a href="https://gist.github.com/AbstractUmbra/a9c188797ae194e592efe05fa129c57f" target="_blank">AbstractUmbra's Gist</a>
+                </div>
+                <p class="indent the-white-para">
+                    Slash commands are commands which can be invoked by typing out <code>/</code> in the text area. Per guild, there can be 100 commands for each bot and only 50
+                    bots can have their slash commands synced!
+                </p>
+                <p class="indent the-white-para">
+                    The below has to be added to your bot subclass.
+                </p>
+                <pre>
+                    <code class="language-python">
+guild_id: int = ctx.guild or discord.Object(...)
+self.tree.copy_global_to(guild=guild)
+                    </code>
+                </pre>
+                <p class="indent the-white-para">
+                    Once you've added the above in your bot subclass, you can now do the following in order to create slash commands.
+                </p>
+                <h4 class="heading">Inside a Cog</h4>
+                <p class="indent the-white-para">
+                    <a href="https://discordpy.readthedocs.io/en/stable/interactions/api.html#discord.app_commands.Command" target="_blank"> <code>@app_commands.command</code></a> decorator
+                    can be used to make commands inside a cog.
+                </p>
+                <pre>
+                    <code class="language-python">
+from typing import Optional
+
+import discord
+from discord import Message
+from discord.ext import commands
+from discord import app_commands
+
+from ...bot import BaseBot
+
+
+class Cog(commands.Cog):
+    def __init__(self, bot: BaseBot) -> None:
+        self.bot = bot
+
+    @app_commands.command(name="hi")
+    async def hi(self, interaction: discord.Interaction) -> Optional[Message]:
+        return await interaction.response.send_message(
+            content=f"Hi {interaction.user}!", ephemeral=True
+        )
+
+
+async def setup(bot: BaseBot) -> None:
+    await bot.add_cog(Cog(bot))
+                    </code>
+                </pre>
+                <h4 class="heading">Outside a Cog</h4>
+                <p class="indent the-white-para">
+                    To create the same outside of a cog, simply follow this:
+                </p>
+                <pre>
+                    <code class="language-python">
+from typing import Optional
+
+import discord
+from discord.ext import commands
+
+intents = discord.Intents.default()
+intents.message_content = True
+bot = commands.Bot(command_prefix=".b", intents=intents)
+
+
+@bot.tree.command(name="ping", aliases=["pong"])
+async def ping(ctx) -> Optional[discord.Message]:
+    """Pong!"""
+    await ctx.send("pong")
+
+
+bot.run("token")
+                    </code>
+                </pre>
+                <h4 class="heading" id="user-based-context-menu-commands"><a href="#user-based-context-menu-commands" class="no-href-styles">User Based Context Menu Commands</a></h3>
+                <p class="indent the-white-para">
+                    These commands can be invoked by clicking on the "Apps" section upon right clicking a user on the "Member List" which is present on the right hand side on
+                    your client in a guild.
+                </p>
+                <p class="indent the-white-para">
+                    These commands can be made by using the <a href="https://discordpy.readthedocs.io/en/stable/api.html#discord.Member" target="_blank"><code>discord.Member</code></a>
+                    typehint.
+                </p>
+                <pre>
+                    <code class="language-python">
+@tree.context_menu(name="ping")
+async def ping(
+    interaction: discord.Interaction, user: discord.Member
+) -> Optional[Message]:
+    """Pong them!"""
+    return await interaction.response.send_message(content=f"{user.mention} pong!")
+                    </code>
+                </pre>
+                <h4 class="heading" id="message-based-context-menu-commands"><a href="#message-based-context-menu-commands" class="no-href-styles">Message Based Context Menu Commands</a></h4>
+                <p class="indent the-white-para">
+                    These commands can be invoked by clicking on the "Apps" section upon right clicking on a message. They can be created annotating with the
+                    <a href="https://discordpy.readthedocs.io/en/stable/api.html#discord.Message" target="_blank"><code>discord.Message</code></a> annotation.
+                </p>
+                <pre>
+                    <code class="language-python">
+@tree.context_menu(name="sent on")
+async def sent_on(
+    interaction: discord.Interaction, message: discord.Message
+) -> Optional[discord.Message]:
+    """Get to know when a message was sent."""
+    return await interaction.response.send_message(
+        content=f"Message was sent on: {discord.utils.format_dt(message.created_at, style='R')}"
+    )
+                    </code>
+                </pre>
+                <h4 class="heading" id="context-menu-inside-a-cog"><a href="#context-menu-inside-a-cog" class="no-href-styles">Context Menu Commands Inside a Cog</a></h4>
+                <p class="indent the-white-para">
+                    To make a context menu command of any kind inside a cog we have to do the following:
+                </p>
+                <pre>
+                    <code class="language-python">
+class Cog(commands.Cog):
+def __init__(self, bot: BaseBot) -> None:
+    self.bot = bot
+    self.first_context_menu = app_commands.ContextMenu(
+        name="Who is This!", callback=self.who_is_this
+    )
+    self.second_context_menu = app_commands.ContextMenu(
+        name="Message Sent At", callback=self.when_was_this_sent
+    )
+    self.bot.tree.add_command(self.first_context_menu)
+    self.bot.tree.add_command(self.second_context_menu)
+
+async def who_is_this(
+    self, interaction: discord.Interaction, user: discord.Member
+) -> Optional[discord.Message]:
+    """Who is this?"""
+    return await interaction.response.send_message(
+        content=f"The user is: {user}!", ephemeral=True
+    )
+
+async def message_sent_on(
+    self, interaction: discord.Interaction, message: discord.Message
+) -> Optional[discord.Message]:
+    """See when a message was sent"""
+    return await interaction.response.send_message(
+        content=f"Message was sent on: {discord.utils.format_dt(message.created_at, style='D')}",
+        ephemeral=True,
+    )
+                    </code>
+                </pre>
+            </div>
+            <div class="pagination">
+                <div class="previous-page"><a href="./working.html" class="no-href-styles">Working of Beach-Bot</a></div>
+                <div class="next-page"><a href="./components.html" class="no-href-styles">Components</a></div>
+            </div>
+        </div>
+        <script>hljs.highlightAll();</script>
+        <button onclick="scrollBackToTop()" id="my-button" title="Got to Top">Top</button>
+        <script src="../../../js/scroll.js" type="text/javascript"></script>
+        <div class="empty-space"></div>
+        <div class="footer">
+            <hr class="divider">
+            <p>With 💖 by bsod2528 | © BSOD's Hub 2023</p>
+    </body>
+</html>

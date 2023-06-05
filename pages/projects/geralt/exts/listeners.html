@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="BSOD's Hub">
+        <meta name="description" content="This website serves as a documentation of my journey as a developer, where I share my experiences and insights, showcase
+        my coding projects, and blog about various aspects of life.">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://bsod2528.me/">
+        <meta property="og:title" content="BSOD's Hub">
+        <meta property="og:description" content="This website serves as a documentation of my journey as a developer, where I share my experiences and insights,
+        showcase my coding projects, and blog about various aspects of life.">
+        <meta property="og:image" content="">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://bsod2528.me/">
+        <meta property="twitter:title" content="BSOD's Hub">
+        <meta property="twitter:description" content="This website serves as a documentation of my journey as a developer, where I share my experiences and insights,
+        showcase my coding projects, and blog about various aspects of life.">
+        <meta property="twitter:image" content="">
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4410608625085719" crossorigin="anonymous"></script>
+
+        <link rel="icon" type="image/gif" href="../../../../media/bsod.gif">
+        <link rel="stylesheet" type="text/css" href="../../../../main.css">
+        <title>BSOD's Hub</title>
+    </head>
+    <body>
+        <nav class="nav-bar">
+            <div class="hub-text no-href-styles"><a href="../../../../index.html">BSOD's Hub</a></div>
+            <ul class="nav-links">
+                <div class="nav-menu">
+                    <li><a href="../../../about_me.html" class="no-href-styles">About Me</a></li>
+                    <li><a href="../../../projects.html" class="no-href-styles">Projects</a></li>
+                    <li><a href="../../../blog.html" class="no-href-styles">Blog</a></li>
+                    <li><a href="../../../contact.html" class="no-href-styles">Contact Me</a></li>
+                    <li><a href="https://www.github.com/bsod2528" class="no-href-styles" target="_blank">Github</a></li>
+                </div>
+            </ul>
+        </nav>
+        <div class="on-this-page">
+            <h3 class="on-this-page-heading">On This Page</h3>
+            <li><a href="#listeners" class="no-href-styles">Listeners</a></li>
+            <li><a href="#events" class="no-href-styles">Events</a></li>
+            <li><a href="#errorhandler" class="no-href-styles">ErrorHandler</a></li>
+        </div>
+        <div class="side-nav">
+            <h3>ALl You Need</h3>
+            <li><a href="../geralt.html" class="no-href-styles">Introduction</a></li>
+            <li><a href="../geralt.html#setup" class="no-href-styles">Setup</a></li>
+            <li><a href="../cogs.html" class="no-href-styles">Cogs Present</a></li>
+            <li><a href="../privacy_policy.html" class="no-href-styles">Privacy Policy</a></li>
+        </div>
+        <div class="content">
+            <div class="section">
+                <h2 class="heading" id="listeners"><a href="#listeners" class="no-href-styles">Listeners</a></h2>
+                <p class="indent the-white-para">
+                    Function decorators which ultimately act as listeners to certain events that occur on Discord on a regular basis. Now by default, the bots don't do this, we have
+                    to give them that power, i.e., program them in such manner.
+                </p>
+                <p class="indent the-white-para">
+                    Geralt listens to 4 major types of events:
+                    <div class="the-list">
+                        <li>Errors</li>
+                        <li>Messages</li>
+                        <li>User updation</li>
+                        <li>Guild joining/leaving</li>
+                    </div>
+                </p>
+            </div>
+            <hr class="divider">
+            <div class="section">
+                <h2 class="heading" id="events"><a href="#events" class="no-href-styles">Events</a></h3>
+                <h3>Messages</h3>
+                <p class="indent the-white-para">
+                    Events such as <code>on_message_delete</code> and <code>on_message_edit</code> are heard by Geralt. From this, I store only a portion of the information and not on the
+                    whole for making sure that the <a href="./discord.html#snipe">snipe</a> commands work properly.
+                </p>
+                <p class="indent the-white-para">
+                    <a href="./utility.html#highlight">Highlight</a> mainly depends on these events! For the <a href="./guild.html#guild">conversion of emote urls</a> in a message into a
+                    webhook message, this is required.
+                </p>
+                <h3>User updation</h3>
+                <p class="indent the-white-para">
+                    On user updating their account, Geralt logs the changes made to their avatar, username, and discriminator. Users have to opt - in for enabling this functionality.
+                    This can be done by runnning the <a href="./utility.html#userlog">userlog</a> commands.
+                </p>
+                <h3>Guild joining/leaving</h3>
+                <p class="indent the-white-para">
+                    For a personal note I log which guilds Geralt joins and leaves. This is done by letting him listen to <code>on_guild_join</code> and <code>on_guild_leave</code> events.
+                    However, these are only logged in a channel only when Geralt is on as he is a locally hosted bot.
+                </p>
+            </div>
+            <hr class="divider">
+            <div class="section">
+                <h2 class="heading" id="errorhandler"><a href="#errorhandler" class="no-href-styles">ErrorHandler</a></h2>
+                <p class="indent the-white-para">
+                    This is a cog which has only one single listener running, which is the <code>on_command_error</code>. This event is the gateway to all the different types of errors that may
+                    occur upon invoking a command.
+                </p>
+                <p class="indent the the-white-para">
+                    I check whether if the user is not an owner, if there was command not found, application command errors, concurrency errors, missing permissons, member not found, wrong
+                    argument, cooldown, missing argument, and at last, errors which were not handled in the above mentioned using a simple <code>else</code> statement.
+                </p>
+            </div>
+        </div>
+        <div class="empty-space"></div>
+        <div class="footer">
+            <hr class="divider">
+            <p>With 💖 by bsod2528 | © BSOD's Hub 2023</p>
+        </div>
+    </body>
+</html>

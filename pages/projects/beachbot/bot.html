@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="bsod's hub">
+        <meta name="description" content="This website serves as a documentation of my journey as a developer, where I share my experiences and insights, showcase
+        my coding projects, and blog about various aspects of life.">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://bsod2528.me/">
+        <meta property="og:title" content="bsod's hub">
+        <meta property="og:description" content="This website serves as a documentation of my journey as a developer, where I share my experiences and insights,
+        showcase my coding projects, and blog about various aspects of life.">
+        <meta property="og:image" content="">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://bsod2528.me/">
+        <meta property="twitter:title" content="bsod's hub">
+        <meta property="twitter:description" content="This website serves as a documentation of my journey as a developer, where I share my experiences and insights,
+        showcase my coding projects, and blog about various aspects of life.">
+        <meta property="twitter:image" content="">
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4410608625085719" crossorigin="anonymous"></script>
+
+        <link rel="icon" type="image/gif" href="../../../media/bsod.gif">
+        <link rel="stylesheet" type="text/css" href="../../../main.css">
+        <title>BSOD's Hub</title>
+    </head>
+    <body>
+        <nav class="nav-bar">
+            <div class="hub-text no-href-styles"><a href="../../../index.html">BSOD's Hub</a></div>
+            <ul class="nav-links">
+                <div class="nav-menu">
+                    <li><a href="../../about_me.html" class="no-href-styles">About Me</a></li>
+                    <li><a href="../../projects.html" class="active-page no-href-styles">Projects</a></li>
+                    <li><a href="../../blog.html" class="no-href-styles">Blog</a></li>
+                    <li><a href="../../contact.html" class="no-href-styles">Contact Me</a></li>
+                    <li><a href="https://www.github.com/BSOD2528" class="no-href-styles" target="_blank">Github</a></li>
+                </div>
+            </ul>
+        </nav>
+        <div class="on-this-page">
+            <h3>On This Page</h3>
+            <li><a href="#intro" class="no-href-styles">Introduction</a></li>
+            <li><a href="#creating-a-bot" class="no-href-styles">Creating a Bot</a></li>
+            <li><a href="#whats-next" class="no-href-styles">What's Next?</a></li>
+        </div>
+        <div class="side-nav">
+            <h3>Deep Dive</h3>
+            <li><a href="./bot.html" class="no-href-styles">Beach-Bot</a></li>
+            <li><a href="./working.html" class="no-href-styles">Working of Beach-Bot</a></li>
+            <li><a href="./dpy.html" class="no-href-styles">Discord.py Basics</a></li>
+            <li><a href="./components.html" class="no-href-styles">Components</a></li>
+        </div>
+        <div class="content">
+            <div class="intro-two">
+                <div class="intro-two-box">
+                    <div class="intro-two-text">
+                        <p>Beach-Bot</p>
+                    </div>
+                </div>
+            </div>
+            <div class="empty-space"></div>
+            <div class="section">
+                <h2 class="heading" id="intro"><a href="#intro" class="no-href-styles">Introduction</a></h2>
+                <p class="indent the-white-para">
+                    Beach-bot is a open source, Discord bot written using the <a href="no-class-href">discord.py</a> written by Rapptz Danny, which serves as a template for all
+                    the newcomers to d.py, subsequently making development easy!
+                </p>
+                <p class="indent the-white-para">
+                    You will be learning how to create a bot on Discord, then start developing it using the Discord API. The following are the pre-requiresites:
+                </p>
+                <div class="the-list">
+                    <li>A PC most preferable</li>
+                    <li>Good internet</li>
+                    <li>A Discord account</li>
+                    <li>Basic Python knowledge</li>
+                    <li>Python environment installed on your machine</li>
+                </div>
+                <p class="indent the-white-para">The following showcases what you will be learning by going through Beach-bot in depth. They are:</p>
+                <div class="the-list">
+                    <li>Syntax of discord.py</li>
+                    <li>Hybrid and Slash commands</li>
+                    <li>User and message context menu commands</li>
+                    <li>Components, i.e., buttons, select menus and modals</li>
+                </div>
+            </div>
+            <hr class="divider">
+            <div class="section">
+                <h2 class="heading" id="creating-a-bot"><a href="#creating-a-bot" class="no-href-styles">Creating a bot</a></h2>
+                <div class="info">
+                    Intents are permissions given to the bot to access certain information of the API in order to reduce resource usage.
+                </div>
+                <br>
+                <span class="steps">Step 1</span>
+                <p class="indent the-white-para">
+                    We would be creating an application in the developer portal of Discord. <a href="https://discord.com/developers/applications/" target="_blank">Click here</a> to go to the
+                    portal. Click on the "New Application" button which is present on the top right hand side corner.
+                </p>
+                <span class="steps">Step 2</span>
+                <p class="indent the-white-para">
+                    Now type in a name for the application, ensure the name is unique and not common as there would be many other bots with the same name.
+                </p>
+                <span class="steps">Step 3</span>
+                <p class="indent the-white-para">
+                    Under the "Settings" category on the left hand side, click on the "Bot" section.
+                </p>
+                <span class="steps">Step 4</span>
+                <p class="indent the-white-para">
+                    Click on the "Add Bot" button which is on the right hand side corner. You will get a confirmation modal in which you will click "Yes" on it. If you get an error
+                    confirming, it means the name you had given for the application is way to common and a new bot cannot be created with the same name.
+                </p>
+                <p class="indent the-white-para">
+                    If you got no error, then pat yourself on the back! You just created your first ever bot on Discord 😎
+                </p>
+                <span class="steps">Step 5</span>
+                <p class="indent the-white-para">
+                    Click on "Click to Reveal Token" to reveal the secret token of your bot and copy it. Please ensure that this token is not shared with anyone. If anyone gets any access to
+                    this token, you will loose complete access to the bot as they will be able to run an instance of your bot and damage everything.
+                </p>
+                <span class="steps">Step 6</span>
+                <p class="indent the-white-para">
+                    To invite your bot to a server, go to the "OAuth2" category and select the "General" option. Under that, click on the dropdown under "Authorization Method" and choose
+                    "In-app Authorization".
+                </p>
+                <p class="indent the-white-para">
+                    Select both "bot" and "application.commands" scopes. The bot scope enables Discord to treat the application as a bot and the applications.commands scope enables the bot to
+                    utilise application commands. Select all the permissions you want the bot to have by default.
+                </p>
+                <p class="indent the-white-para">
+                    The "In-app Authorization" allows users to invite bots into other servers from the bot profile itself. Save the changes you've made so far.
+                </p>
+                <span class="steps">Step 7</span>
+                <p class="indent the-white-para">
+                    Once again, under the "OAuth2" category, now select the URL Generator and click on the "bot" scope and choose your permissions. A url would've been generated below, copy
+                    paste the url in a different tab to invite the bot.
+                </p>
+                <span class="steps">Step 8</span>
+                <p class="indent the-white-para">
+                    We now need to enable few intents for the bot to work in general. In the "Bot" section, enable "Server Member" (access information of server members), "Message Content"
+                    (access information from messages), and "Precense Intent" (access precense information of users).
+                </p>
+                <p class="indent the-white-para">
+                    On enabling this, you will be able to access the information accordingly and execute commands in ease. However, upon reaching 100+ guilds, you would have to get your
+                    bot verified and send Discord a proper reason in order to continue access the information.
+                </p>
+            </div>
+            <hr class="divider">
+            <div class="section">
+                <h2 class="heading" id="whats-next"><a href="#whats-next" class="no-href-styles">What's Next?</a></h2>
+                <p class="indent the-white-para">
+                    You have now created a bot and invited it into your server! All you now need is to code all the features you want!
+                </p>
+                <p class="indent the-white-para">
+                    The following pages will showcase everything on how the bot works, how discord.py works and the process of creating application commands and commands that use components.
+                </p>
+            </div>
+            <div class="pagination">
+                <div class="previous-page"><a href="../../projects.html" class="no-href-styles">Projects</a></div>
+                <div class="next-page"><a href="./working.html" class="no-href-styles">Working of Beach-Bot</a></div>
+            </div>
+        </div>
+        <button onclick="scrollBackToTop()" id="my-button" title="Got to Top">Top</button>
+        <script src="../../../js/scroll.js" type="text/javascript"></script>
+        <div class="empty-space"></div>
+        <div class="footer">
+            <hr class="divider">
+            <p>With 💖 by bsod2528 | © BSOD's Hub 2023</p>
+        </div>
+    </body>
+</html>

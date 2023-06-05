@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Primary Meta Tags -->
+        <meta name="title" content="bsod's hub">
+        <meta name="description" content="This website serves as a documentation of my journey as a developer, where I share my experiences and insights, showcase
+        my coding projects, and blog about various aspects of life.">
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://bsod2528.me/">
+        <meta property="og:title" content="bsod's hub">
+        <meta property="og:description" content="This website serves as a documentation of my journey as a developer, where I share my experiences and insights,
+        showcase my coding projects, and blog about various aspects of life.">
+        <meta property="og:image" content="">
+
+        <!-- Twitter -->
+        <meta property="twitter:card" content="summary_large_image">
+        <meta property="twitter:url" content="https://bsod2528.me/">
+        <meta property="twitter:title" content="bsod's hub">
+        <meta property="twitter:description" content="This website serves as a documentation of my journey as a developer, where I share my experiences and insights,
+        showcase my coding projects, and blog about various aspects of life.">
+        <meta property="twitter:image" content="">
+
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4410608625085719" crossorigin="anonymous"></script>
+
+        <link rel="icon" type="image/gif" href="../../../media/bsod.gif">
+        <link rel="stylesheet" type="text/css" href="../../../main.css">
+        <title>BSOD's Hub</title>
+    </head>
+    <body>
+        <nav class="nav-bar">
+            <div class="hub-text no-href-styles"><a href="../../../index.html">BSOD's Hub</a></div>
+            <ul class="nav-links">
+                <div class="nav-menu">
+                    <li><a href="../../about_me.html" class="no-href-styles">About Me</a></li>
+                    <li><a href="../../projects.html" class="active-page no-href-styles">Projects</a></li>
+                    <li><a href="../../blog.html" class="no-href-styles">Blog</a></li>
+                    <li><a href="../../contact.html" class="no-href-styles">Contact Me</a></li>
+                    <li><a href="https://www.github.com/BSOD2528" class="no-href-styles" target="_blank">Github</a></li>
+                </div>
+            </ul>
+        </nav>
+        <div class="on-this-page">
+            <h3>On This Page</h3>
+            <li><a href="#bot-subclass" class="no-href-styles">Bot Subclass</a></li>
+            <li><a href="#running-the-bot" class="no-href-styles">Running the Bot</a></li>
+            <li><a href="#cogs" class="no-href-styles">Cogs</a></li>
+            <li><a href="#commands" class="no-href-styles">Commands</a></li>
+        </div>
+        <div class="side-nav">
+            <h3>Deep Dive</h3>
+            <li><a href="./bot.html" class="no-href-styles">Beach-Bot</a></li>
+            <li><a href="./working.html" class="no-href-styles">Working of Beach-Bot</a></li>
+            <li><a href="./dpy.html" class="no-href-styles">Discord.py Basics</a></li>
+            <li><a href="./components.html" class="no-href-styles">Components</a></li>
+        </div>
+        <div class="content">
+            <div class="section">
+                <h2 class="heading" id="bot-subclass"><a href="#bot-subclass" class="no-href-styles">Bot Subclass</a></h2>
+                <div class="info">
+                    Learn more about classes here:&nbsp;<a href="https://www.youtube.com/watch?v=ZDa-Z5JzLYM&list=PL-osiE80TeTsqhIuOqKhwlXsIBIdSeYtc" target="_blank">Classes</a>
+                </div>
+                <br>
+                <div class="info">
+                    Refer the documentation for the classes and methods mentioned accordingly:&nbsp;<a href="https://discordpy.readthedocs.io" target="_blank">discord.py docs</a>
+                </div>
+                <p class="indent the-white-para">
+                    Inside <code>discord.ext.commands</code> there is a class called <code>Bot</code>. We first subclass this and name it as BaseBeach. The init method consists
+                    of all the basic parameters the bot requires to function. Upon passing the parameters, we pass onto the next method.
+                </p>
+                <p class="indent the-white-para">
+                    <code>async def load_exts</code> - This method loads all the cogs in an async manner from the list of all the directories of our cogs. Yet, it is not executed.
+                </p>
+                <p class="indent the-white-para">
+                    The <a href="https://discordpy.readhedocs.io/en/stable/ext/commands/api.html?highlight=setup_hook#discord.ext.commands.Bot.setup_hook" target="_blank">setup_hook</a> method
+                    is where all the bot loading tasks are supposed to be executed, i.e., loading cache, connecting to the database, loading cogs, etc. This method is executed
+                    before the bot it is connected to the Websocket (before it is online).
+                </p>
+                <p class="indent the-white-para">
+                    We then listen to the <a href="https://discordpy.readthedocs.io/en/stable/ext/commands/api.html?highlight=setup_hook#discord.ext.commands.Bot.event" target="_blank">on_ready</a>
+                    event which checks if the bot is ready to be used. On ready, we print in the console that "Beach-Bot is online!".
+                </p>
+            </div>
+            <hr class="divider">
+            <div class="section">
+                <h2 class="heading" id="running-the-bot"><a href="#running-the-bot" class="no-href-styles">Running the Bot</a></h2>
+                <p class="indent the-white-para">
+                    The bot-subclass, and others are present inside <code>bot.py</code> Outside this class, we have an async function called <code>run</code>.
+                    We instantiate the subclass and run <code>start</code> method. Yet, this function is not called. In the file called <code>launcher.py</code>
+                    which is outside the <code>beach</code> folder calls this function, thus the bot runs.
+                </p>
+                <p class="indent the-white-para">
+                    In bot.py, we import dotenv library which can be installed from pip which loads the config.env file which stores all my credentials needed. In this case,
+                    the bot's secret token.
+                </p>
+                <p class="indent the-white-para">
+                    Oh, for your information, you need the following requirements installed in your Python environment in order to run Beach-Bot successfully. You can check them
+                    out right here: <a href="../../../extra/beach_requirements.txt">requirements.txt</a>
+                </p>
+            </div>
+            <hr class="divider">
+            <div class="section">
+                <h2 class="heading" id="cogs"><a href="#cogs" class="no-href-styles">Cogs</a></h2>
+                <p class="indent the-white-para">
+                    A cog is a combination of commands which are related to each other by purpose and target. For example, Moderation cog - will have all the commands related to
+                    moderation activities such as ban, kick, mute, etc.
+                </p>
+                <p class="indent the-white-para">
+                    Each cog is a class containing methods for the sake of easy development and organisation. Commands are present as a method inside the class.
+                </p>
+                <p class="indent the-white-para">
+                    There are a total of 4 cogs present. Developer, Fun, ErrorHandler, and Help are the cogs present. Developer contains commands for the bot owner to use, Fun has
+                    few commands which induce dopamine and make the user happy. ErrorHandler is for handling all the errors that occur upon running a command, and at last the
+                    Help cog is a subclass of <a href="https://discordpy.readthedocs.io/en/stable/ext/commands/api.html?highlight=help%20command#minimalhelpcommand" target="_blank">commands.MinimalHelpCommand</a>
+                    which takes care making the default help command much more beautiful.
+                </p>
+                <p class="indent the-white-para">
+                    We shall now see the commands present in each cog. The syntax alone for each command will be given. A detailed description on creating cogs and commands
+                    will be mentioned in the next page.
+                </p>
+            </div>
+            <hr class="divider">
+            <div class="section">
+                <h2 class="heading" id="commands"><a href="#commands" class="no-href-styles">Commands</a></h2>
+                <p class="indent the-white-para">
+                    A command is basically a method in a cog class which is defined using the
+                    <a href="https://discordpy.readthedocs.io/en/stable/ext/commands/api.html?highlight=discord%20ext%20commands%20command#discord.ext.commands.command" target="_blank">@command</a>
+                    decorator. We will be learning more on this in the next section don't worry!
+                </p>
+                <p class="indent the-white-para">
+                    The Developer cog has only three commands which are load, unload, and reload. These commands take care of making changes to a command when made without actually
+                    having to restart the entire bot.
+                </p>
+                <p class="indent the-white-para">
+                    The Fun cog has 5 commands, in which 2 are text, 1 is a slash command and the other two are context menu commands. Out of these context menu commands, one is a
+                    user based and the other is a message based context menu.
+                </p>
+                <p class="indent the-white-para">
+                    In the comming sections, you will be learning on how these commands work, how to make them and etc.
+                </p>
+            </div>
+            <div class="pagination">
+                <div class="previous-page"><a href="./bot.html" class="no-href-styles">Beach-Bot</a></div>
+                <div class="next-page"><a href="./dpy.html" class="no-href-styles">Discord.py Basics</a></div>
+            </div>
+        </div>
+        <button onclick="scrollBackToTop()" id="my-button" title="Got to Top">Top</button>
+        <script src="../../../js/scroll.js" type="text/javascript"></script>
+        <div class="empty-space"></div>
+        <div class="footer">
+            <hr class="divider">
+            <p>With 💖 by bsod2528 | © BSOD's Hub 2023</p>
+        </div>
+    </body>
+</html>
