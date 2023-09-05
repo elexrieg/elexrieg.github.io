@@ -13,9 +13,9 @@ Thank you for visiting my portfolio! Feel free to contact me to learn more or vi
 ---
 ## Todo
 
-- [ ] Make the website responsive.
+- [x] Make the website responsive for smortphones.
 - [ ] Add dark mode toggler.
-- [ ] Implement JS frameworks like react or any other.
+- [ ] Support responsiveness for other devices and optimise it.
 
 ---
 ### Credits

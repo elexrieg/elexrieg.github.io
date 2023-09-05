@@ -28,21 +28,28 @@
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4410608625085719" crossorigin="anonymous"></script>
 
         <link rel="icon" type="image/gif" href="../../../media/bsod.gif">
-        <link rel="stylesheet" type="text/css" href="../../../main.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/main.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/responsive.css">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/styles/base16/material-darker.min.css">
         <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.7.0/highlight.min.js"></script>
         <title>bsod's hub</title>
     </head>
     <body>
+        <div class="menu-icon">
+            <script src="../../../js/hamburger.js"></script>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
         <nav class="nav-bar">
             <div class="hub-text no-href-styles"><a href="../../../index.html">bsod's hub</a></div>
             <ul class="nav-links">
                 <div class="nav-menu">
-                    <li><a href="../../about_me.html" class="no-href-styles">About Me</a></li>
-                    <li><a href="../../projects.html" class="active-page no-href-styles">Projects</a></li>
-                    <li><a href="../../blog.html" class="no-href-styles">Blog</a></li>
-                    <li><a href="../../contact.html" class="no-href-styles">Contact Me</a></li>
-                    <li><a href="https://www.github.com/bsod2528" class="no-href-styles" target="_blank">Github</a></li>
+                    <li><a href="../../about_me.html" class="no-href-styles">about me</a></li>
+                    <li><a href="../../projects.html" class="active-page no-href-styles">projects</a></li>
+                    <li><a href="../../blog.html" class="no-href-styles">blog</a></li>
+                    <li><a href="../../contact.html" class="no-href-styles">contact me</a></li>
+                    <li><a href="https://www.github.com/bsod2528" class="no-href-styles" target="_blank">github</a></li>
                 </div>
             </ul>
         </nav>
@@ -61,6 +68,7 @@
             <li><a href="./dpy.html" class="no-href-styles">Discord.py Basics</a></li>
             <li><a href="./components.html" class="no-href-styles">Components</a></li>
         </div>
+        <div class="empty-space-for-phones"></div>
         <div class="content">
             <div class="section">
                 <h2 class="heading" id="oop-involved"><a href="#oop-involved" class="no-href-styles">How is OOP Involved?</a></h2>
@@ -171,6 +179,7 @@ async def setup(bot: BaseBot) -> None:
                     all methods of a cog!
                 </p>
                 <pre>
+                    <code>
 from typing import Optional
 
 from discord import Message
@@ -383,6 +392,7 @@ async def message_sent_on(
                 <div class="next-page"><a href="./components.html" class="no-href-styles">Components</a></div>
             </div>
         </div>
+        <div class="empty-space-for-phones"></div>
         <script>hljs.highlightAll();</script>
         <button onclick="scrollBackToTop()" id="my-button" title="Got to Top">Top</button>
         <script src="../../../js/scroll.js" type="text/javascript"></script>

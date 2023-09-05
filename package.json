@@ -1,0 +1,17 @@
+{
+  "name": "bsod2528.github.io",
+  "version": "1.1",
+  "description": "this is my personal website",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bsod2528/bsod2528.github.io.git"
+  },
+  "keywords": [
+    "profile"
+  ],
+  "author": "bsod2528",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.29.3"
+  }
+}
