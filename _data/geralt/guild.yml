@@ -1,0 +1,13 @@
+- cmd: ".gguild auditlog"
+  alias: "al"
+  desc: "View your Audit Lot"
+  cooldown: "Can be used 1 time every 30.0 seconds per each category."
+  concur: "Can be used 1 time concurrently in a guild."
+
+- cmd: ".gguild convertemote"
+  alias: "ce"
+  desc: "Enable to convert emote urls to webhooks."
+
+- cmd: ".gguild snipe"
+  alias: "s"
+  desc: "Opt-in/out for sniping messages!"

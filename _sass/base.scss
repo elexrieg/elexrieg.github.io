@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    color: #ffffff;
+}
+
+h1 .anchor, h2 .anchor, h3 .anchor, h4 .anchor, h5 .anchor, h6 .anchor {
+    display: none;
+    transition: display 0.3s ease-in-out;
+}
+
+h1:hover .anchor, h2:hover .anchor, h3:hover .anchor, h4:hover .anchor, h5:hover .anchor, h6:hover .anchor {
+    font-size: medium;
+    display: inline;
+}
+
+hr {
+    color: rgb(255, 196, 220);
+    width: 100%;
+}
+
+body {
+    font-size: 16.5px;
+    font-family: "Noto Sans Mono", monospace;
+    background-color: #130d1c;
+    color: #d8e1ff;
+    font-weight: 500;
+    margin: 0 !important;
+
+    a {
+        color: rgb(154, 99, 255);
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+    }
+
+    a:hover {
+        color: white;
+    }
+
+    nav {
+        display: flex;
+        justify-content:space-evenly;
+        flex-direction:  row;
+        width: 100%;
+
+        a {
+            text-decoration: none;
+            color: #ff869a;
+            font-weight: bold;
+            transition: color 0.2s ease-in-out;
+
+            &:before {
+                content: "[";
+                margin-right: -0.5em;
+            }
+
+            &:after {
+                content: "]";
+                margin-left: -0.5em;
+            }
+
+            &:hover {
+                color: white;
+            }
+        }
+    }
+
+    .container {
+        width: 100%;
+        height: 100%;
+
+        .sparkles {
+            display: block;
+            height: 150px;
+            width: 150px;
+            margin-top: -10px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .child-container {
+            display: flex;
+
+            .sidenav {
+                width: 30%;
+                height: 100%;
+            }
+
+            .sidenav a {
+                color: white;
+                font-weight: bolder;
+            }
+
+            .sidenav a:hover {
+                color: rgb(104, 156, 253);;
+            }
+
+            .content {
+                width: 40%;
+                height: 100%;
+            }
+        }
+    }
+
+    .toc a {
+        width: 30%;
+        height: 100%;
+        color: rgb(175, 255, 235);
+        font-weight: bolder;
+        text-decoration: none;
+    }
+
+    .toc a:hover {
+        color: rgb(104, 156, 253);
+    }
+
+    .footer {
+        bottom: 0;
+        color: white;
+        text-align: center;
+        background-color: #26084652;
+        margin-bottom: 10px;
+    }
+
+    .heart {
+        &:before {
+            content: "<";
+            color: red;
+            font-weight: bolder;
+        }
+
+        &:after {
+            content: ">";
+            color: red;
+            font-weight: bolder;
+        }
+    }
+
+    .hover-flag {
+        position: relative;
+        display: inline-block;
+
+        .flag {
+            opacity: 0;
+            position: absolute;
+            z-index: 1;
+            top: -30px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: opacity 0.1s ease-in-out;
+        }
+
+        &:hover .flag {
+            opacity: 1;
+        }
+    }
+
+    .space {
+        margin-top: 25px;
+    }
+}

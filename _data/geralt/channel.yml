@@ -1,0 +1,13 @@
+- cmd: ".gchannel lock"
+  req: "channel,snowflake"
+  alias: "lk"
+  desc: "Lock user/role from using a channel."
+
+- cmd: ".gchannel unlock"
+  req: "channel,snowflake"
+  alias: "unlk"
+  desc: "Unlock channels from members/roles."
+
+- cmd: ".gchannel locked-list"
+  alias: "all | list"
+  desc: "View snowflakes which where locked from certain channels."

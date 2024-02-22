@@ -1,0 +1,17 @@
+- cmd: ".gblacklist add"
+  alias: "Nil"
+  desc: "Add objects to blacklist."
+  req: "snowflake"
+  op: "reason"
+  cooldown: "Can be used 2 times every 5.0 seconds per user."
+
+- cmd: ".gblacklist remove"
+  alias: "Nil"
+  desc: "Remove objects from blacklist."
+  req: "snowflake"
+  cooldown: "Can be used 2 times every 5.0 seconds per user."
+
+- cmd: ".gblacklist all"
+  alias: "Nil"
+  desc: "Get a list of blacklisted objects."
+  cooldown: "Can be used 2 times every 5.0 seconds per user."

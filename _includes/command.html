@@ -1,0 +1,79 @@
+<div class="command">
+    <div class="c-signature">
+        <span class="c-base">{{ include.cmd }}</span>
+        {% assign req_args = include.req | split: "," %}
+        {% if req_args %}
+            {% for req_arg in req_args %}
+                <span class="c-req-arg">{{ req_arg }}</span>
+            {% endfor %}
+        {% endif %}
+        {% assign op_args = include.op | split: "," %}
+        {% if op_args %}
+            {% for op_arg in op_args %}
+                <span class="c-op-arg">{{ op_arg }}</span>
+            {% endfor %}
+        {% endif %}
+    </div>
+    <div class="c-info">
+        <span class="c-alias"><span class="cb">{{ include.cmd_alias }}</span></span>
+        <br>
+        <span class="c-desc">{{ include.cmd_desc }}</span>
+        {% if include.cooldown %}
+        <br>
+        <span class="c-cooldown">{{ include.cooldown }}</span>
+        {% endif %}
+        {% if include.flags %}
+        <br>
+        <span class="c-flags"><span class="cb">{{ include.flags }}</span> | {{ include.flags_desc }}</span>
+        {% endif %}
+        <br>
+        {% if include.example %}
+        <span class="c-example"><span class="cb">{{ include.example }}</span></span>
+        {% endif %}
+        {% if include.concur %}
+        <span class="c-concur"><span class="cb">{{ include.concur }}</span></span>
+        {% endif %}
+    </div>
+    {% if include.subcmd %}
+        {% for sub_command in include.sub_commands_data %}
+            {% include hr.html %}
+            <div class="c-sub">
+                <div class="c-signature">
+                    <span class="c-base">{{ sub_command.cmd }}</span>
+                    {% if sub_command.req %}
+                        {% assign req_args = sub_command.req | split: "," %}
+                        {% for req_arg in req_args %}
+                            <span class="c-req-arg">{{ req_arg }}</span>
+                        {% endfor %}
+                    {% endif %}
+                    {% if sub_command.op %}
+                        {% assign op_args = sub_command.op | split: "," %}
+                        {% for op_arg in op_args %}
+                            <span class="c-op-arg">{{ op_arg }}</span>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+                <div class="c-info">
+                    <span class="c-alias"><span class="cb">{{ sub_command.alias }}</span></span>
+                    <br>
+                    <span class="c-desc">{{ sub_command.desc }}</span>
+                    {% if sub_command.cooldown %}
+                    <br>
+                    <span class="c-cooldown">{{ sub_command.cooldown }}</span>
+                    {% endif %}
+                    {% if sub_command.flags %}
+                    <span class="c-flags"><span class="cb">{{ sub_command.flags }}</span> | {{ sub_command.flags_desc }}</span>
+                    {% endif %}
+                    <br>
+                    {% if sub_command.example %}
+                    <span class="c-example"><span class="cb">{{ sub_command.example }}</span></span>
+                    {% endif %}
+                    {% if sub_command.concur %}
+                    <span class="c-concur"><span class="cb">{{ sub_command.concur }}</span></span>
+                    {% endif %}
+                </div>
+            </div>
+            {% unless forloop.last %}{% endunless %}
+        {% endfor %}
+    {% endif %}
+</div>

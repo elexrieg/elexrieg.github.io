@@ -1,0 +1,95 @@
+.command {
+    padding: 25px;
+    background-color: rgb(151, 150, 253); // get a different
+
+    .c-sub {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .c-line {
+        color: rgb(0, 0, 0);
+        width: 100%;
+    }
+
+    .c-signature {
+        outline-style: solid;
+        outline-color: rgb(255, 255, 255);
+        color: white;
+        padding: 10px;
+        box-sizing: border-box;
+        
+        background-color: rgb(58, 58, 58);
+
+        .c-req-arg {
+            color: rgb(251, 255, 0);
+
+            &::before {
+                content: "\003C";
+            }
+
+            &::after {
+                content: "\003E";
+            }
+        }
+
+        .c-op-arg {
+            color: rgb(0, 255, 0);
+
+            &::before {
+                content: "\005B";
+            }
+
+            &::after {
+                content: "\005D";
+            }
+        }
+
+        &::before {
+            content: "Syntax: ";
+            font-weight: bolder;
+        }
+    }
+
+    .c-info {
+        margin-top: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        outline-style: solid;
+        outline-color: rgb(255, 255, 255);
+        background-color: rgb(71, 0, 165);
+
+        .c-alias, .c-desc, .c-cooldown, .c-flags, .c-example, .c-concur {
+            color: white;
+
+            &::before {
+                color: white;
+                font-weight: bolder;
+            }
+        }
+
+        .c-cooldown::before {
+            content: "Cooldown: ";
+        }
+
+        .c-alias::before {
+            content: "Alias: ";
+        }
+
+        .c-desc::before {
+            content: "Description: ";
+        }
+
+        .c-flags::before {
+            content: "Flags: ";
+        }
+
+        .c-example::before {
+            content: "Example: ";
+        }
+
+        .c-concur::before {
+            content: "Concurreny: ";
+        }
+    }
+}

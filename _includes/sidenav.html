@@ -1,0 +1,9 @@
+<div class="sidenav">
+	<div class="sn-child"> <!--I wanted to add a background colour, but no lol.-->
+		<ul>
+			{% for doc in site[include.collection] %}
+				<li><a href="{{ doc.url }}">{{ doc.title }}</a></li>
+			{% endfor %}
+		</ul>
+	</div>
+</div>
