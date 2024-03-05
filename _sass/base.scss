@@ -158,4 +158,47 @@ body {
     .space {
         margin-top: 25px;
     }
+
+    @media only screen and (max-width: 422px) {
+        nav {
+            overflow-x: auto;
+            white-space: nowrap;
+        }
+    }    
+
+    @media only screen and (max-width: 576px) {        
+        .container {
+            width: 100%;
+            height: 100%;
+
+            .child-container {
+                padding: 5px;
+                flex-direction: column;
+
+                .sparkles {
+                    order: 1;
+                }
+                
+                .toc a {
+                    width: 100%;
+                    order: 2;
+                    margin-top: 10px;
+                }
+                
+                .sidenav {
+                    order: 3
+                }
+
+                .sidenav a:hover {
+                    color: rgb(104, 156, 253);;
+                }
+
+                .content {
+                    width: 100%;
+                    height: 100%;
+                    order: 4;
+                }                
+            }
+        }
+    }
 }
