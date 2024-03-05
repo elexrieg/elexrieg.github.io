@@ -160,10 +160,16 @@ body {
     }
 
     @media only screen and (max-width: 422px) {
-        nav a {
-            font-size: 0.86em;
-            padding: 0.4em;
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
         }
+    
+        nav a {
+            margin: 5px;
+        }
+        
     }    
 
     @media only screen and (max-width: 576px) {        
