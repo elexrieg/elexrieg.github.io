@@ -7,7 +7,7 @@
         <!-- primary meta tags -->
         <meta name="title" content="bsod's hub">
         <meta name="theme-color" content="#FFADAD">
-        <meta name="description" content="yes, this is bluescreen's profile &#128511;">
+        <meta name="description" content="Yes, this is bluescreen's profile &#128511;">
 
         <!-- open graph / facebook -->
         <meta property="og:type" content="website">
@@ -45,6 +45,8 @@
                     {% if page.anchor %}
                         {% include anchor_headings.html html=content anchorBody="&#x1F517;" anchorClass="anchor" %}
                     {% else %}
+                        <h1>{{ page.title }}</h1>
+                        <span class="b-details">{{ page.date | date_to_string }} - AV Vishal Srivatsava</span>
                         {{ content }}
                     {% endif %}
                     <hr>

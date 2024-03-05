@@ -6,4 +6,5 @@ kramdown:
 collections:
   geralt-docs:
     output: true
+
 collections_dir: pages
