@@ -2,7 +2,7 @@
 layout: post
 media: /assets/images/blog-1.gif
 toc: true
-tags: world environment
+tags: environment
 author: bsod2528
 anchor: false
 sidenav: false
@@ -33,6 +33,7 @@ Let's work together for a brighter future. Thank you for joining!
 
 - [Discord](https://discord.gg/9M9mwWkKAX)
 - [Notion](https://togethertomorrow.notion.site/Environment-Dashboard-13e77f7fde5845dfa765da98069efadd)
+
 {%
     include paginate.html
     back="/pages/blog.html"

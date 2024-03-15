@@ -2,6 +2,7 @@
 layout: default
 title: Home
 toc: false
+anchor: false
 sidenav: false
 ---
 
@@ -12,6 +13,7 @@ Welcome to my world! This is a place where I blog sometimes regarding mostly on 
 A small legend for the below list:
 <br>[ <span class="diff-knowledge">+</span> -- how much I know ]
 <br>[ <span class="diff-practical">-</span> -- how much I've used ]
+<br> all values are out of 6.
 {:.info}
 
 I learn new stuff as I'm either interested in them or I need to use them in my life. Languages and stuff
@@ -48,8 +50,17 @@ I learn new stuff as I'm either interested in them or I need to use them in my l
 When it comes to tools I use:
 <div class="box-1">
     <ul>
-        <li class="li-stack"><span class="li-lang">Git</span><span class="li-worked-with">[<span class="diff-knowledge">++</span><span class="diff-practical">----</span>]</span></li>
-        <li class="li-stack"><span class="li-lang">Neovim && Visual Studio Code</span><span class="li-worked-with">[<span class="diff-knowledge">++</span><span class="diff-practical">----</span>]</span></li>
-        <li class="li-stack"><span class="li-lang">Windows && Arch dual boot</span><span class="li-worked-with">[<span class="diff-knowledge">+++</span><span class="diff-practical">-----</span>]</span></li>
+        <li class="li-stack">
+            <span class="li-lang">Git</span>
+            <span class="li-worked-with">[<span class="diff-knowledge">++</span><span class="diff-practical">----</span>]</span>
+        </li>
+        <li class="li-stack">
+            <span class="li-lang">Neovim && Visual Studio Code</span>
+            <span class="li-worked-with">[<span class="diff-knowledge">++</span><span class="diff-practical">----</span>]</span>
+        </li>
+        <li class="li-stack">
+            <span class="li-lang">Windows && Arch dual boot</span>
+            <span class="li-worked-with">[<span class="diff-knowledge">+++</span><span class="diff-practical">-----</span>]</span>
+        </li>
     </ul>
 </div>
