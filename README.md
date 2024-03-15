@@ -8,5 +8,5 @@ While the old [Jekyll TeXT](https://github.com/kitian616/jekyll-TeXt-theme) them
 ## Todo
 
 - [ ] Add dark mode toggler.
-- [ ] Support responsiveness for other devices and optimise it.
+- [x] Support responsiveness for other devices and optimise it.
 ---
