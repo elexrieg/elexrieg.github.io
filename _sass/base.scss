@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
 
+::selection {
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: #ffffff;
 }
