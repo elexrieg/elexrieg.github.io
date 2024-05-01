@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100..900&display=swap');
+
+// top tracks
+.top-tracks {
+    &:first-child {
+        margin-top: 20px;
+    }
+
+    display: flex;
+    margin-bottom: 20px;
+
+    .track-image {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .track-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .artist-name,
+        .track-name,
+        .track-plays {
+            margin-bottom: 5px;
+        }
+
+        .artist-name {
+            font-weight: bold;
+            color: #f1f0ff;
+        }
+
+        .track-name {
+            color: #f1f0ff;
+        }
+
+        .track-plays {
+            color: #919191;
+        }
+    }
+}
+
+.accordion {
+    background-color: #202025;
+    color: #ffffff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+    font-family: "Noto Sans Mono", monospace;
+
+}
+
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+
+    &.show {
+        max-height: 1000px;
+    }
+}
+
+#tracksContainer {
+    background-color: #2e2e36;
+}
+
+// top artists
+.top-artists {
+    &:first-child {
+        margin-top: 20px;
+    }
+
+    display: flex;
+    margin-bottom: 20px;
+
+    .artist-image {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .artist-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .artist-name,
+        .artist-plays {
+            margin-bottom: 5px;
+        }
+
+        .artist-name {
+            font-weight: bold;
+            color: #f1f0ff;
+        }
+
+        .artist-plays {
+            color: #919191;
+        }
+    }
+}
+
+#artistsContainer {
+    background-color: #2e2e36;
+}
+
+// recent tracks
+.recent-tracks {
+    &:first-child {
+        margin-top: 20px;
+    }
+
+    display: flex;
+    margin-bottom: 20px;
+
+    .track-image {
+        width: 100px;
+        height: 100px;
+        margin-right: 10px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .track-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .artist-name,
+        .track-name,
+        .track-date {
+            margin-bottom: 5px;
+        }
+
+        .artist-name {
+            font-weight: bold;
+            color: #f1f0ff;
+        }
+
+        .track-name {
+            color: #f1f0ff;
+        }
+
+        .track-date {
+            color: #919191;
+        }
+    }
+}
+
+#recentTracksContainer {
+    background-color: #2e2e36;
+}

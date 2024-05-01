@@ -18,13 +18,18 @@ Discord.
 I love Christian Bale and Cillian Murphy (100% straight) from the bottom of my heart as they're fine actors who portray the meaning and the essence on the screen in the most unique way.
 
 ## Hobbies
+
 I like to game, code, listen to a lot of music, and make decent music. I also speed cube, current personal best is at <span class="cb">11.96</span> seconds. I watch a ton of movies.
 
 ### Favourite Games
+
 GTA V, Far Cry 3, GTA San Andreas, Minecraft, CS GO (not the best, but I was good), and FPS in general. On mobile platform I really do like Crossy Road.
 
-### Favourite Musician
-My lastfm and spotify say them all, Hans Zimmer, Ludwig Göransson, and Joji take the first three places on the leaderboard.
+### Favourite Musicians
+
+My lastfm and spotify say them all, Hans Zimmer, Ludwig Göransson, and Joji take the first three places on the leaderboard. Regardless, checkout what I've been scrobbling (listening) too!
+
+{% include lastfm.html %}
 
 ## Socials
 
