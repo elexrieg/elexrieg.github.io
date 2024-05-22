@@ -29,6 +29,9 @@ GTA V, Far Cry 3, GTA San Andreas, Minecraft, CS GO (not the best, but I was goo
 
 My lastfm and spotify say them all, Hans Zimmer, Ludwig Göransson, and Joji take the first three places on the leaderboard. Regardless, checkout what I've been scrobbling (listening) too!
 
+I'm trying to host on Vercel, if it works / once I do that, the below will work 🤡.
+{:.deprecated}
+
 {% include lastfm.html %}
 
 ## Socials
