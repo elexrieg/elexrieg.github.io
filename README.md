@@ -1,4 +1,4 @@
-# [bsod2528.me](https://bsod2528.me)
+# [bsod's hub](https://bsod2528.github.io)
 
 A simple portfolio made purely using HTML and CSS which were subsequently learnt in order to make this a reality.
 

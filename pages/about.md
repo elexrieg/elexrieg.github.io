@@ -23,16 +23,11 @@ I like to game, code, listen to a lot of music, and make decent music. I also sp
 
 ### Favourite Games
 
-GTA V, Far Cry 3, GTA San Andreas, Minecraft, CS GO (not the best, but I was good), and FPS in general. On mobile platform I really do like Crossy Road.
+<span class="gta">GTA V</span>, <span class="fc">Far Cry 3</span>, <span class="gta">GTA San Andreas</span>, <span class="mc">Minecraft</span>, <span class="cb">CS GO</span> (not the best, but I was good), and FPS in general. On mobile platform I really do like Crossy Road.
 
 ### Favourite Musicians
 
-My lastfm and spotify say them all, Hans Zimmer, Ludwig Göransson, and Joji take the first three places on the leaderboard. Regardless, checkout what I've been scrobbling (listening) too!
-
-I'm trying to host on Vercel, if it works / once I do that, the below will work 🤡.
-{:.deprecated}
-
-{% include lastfm.html %}
+My lastfm and spotify say them all, Hans Zimmer, Ludwig Göransson, and Joji take the first three places on the leaderboard.
 
 ## Socials
 

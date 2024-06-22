@@ -3,7 +3,6 @@ layout: post
 media: /assets/images/blog-1.gif
 toc: true
 tags: environment
-author: bsod2528
 anchor: false
 sidenav: false
 ---

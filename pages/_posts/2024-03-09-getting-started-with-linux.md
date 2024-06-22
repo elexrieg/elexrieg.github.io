@@ -3,7 +3,6 @@ layout: post
 media: /assets/images/blog-2.gif
 toc: true
 tags: tech linux
-author: bsod2528
 anchor: false
 sidenav: false
 ---

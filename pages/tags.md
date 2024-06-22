@@ -10,6 +10,6 @@ sidenav: false
 {% for tag in sorted_tags %}
 # {{ tag[0] }}
 {% for post in tag[1] %}
-- [{{ post.title }}]({{ post.url }})
+- [{{ post.title }}]({{ post.url }}): [<span class="cb">{{ post.content | number_of_words }} words</span>]
 {% endfor %}
 {% endfor %}
