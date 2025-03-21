@@ -91,31 +91,34 @@ Rules are present in the registration link.
 <!-- pywars -->
 {%
     include event.html
-    one_line_caption="XXX"
-    description="XXX"
+    one_line_caption="Code. Conquer. Dominate the Python battlefield!"
+    description="Thrilling, logic-driven coding competition designed to test participants' debugging and coding skills. The event consists of two rounds, each challenging a different aspect of programming prowess."
     event_type="Solo"
     header="/assets/headers/tech/pywars.gif"
-    url=""
+    url="https://docs.google.com/forms/d/e/1FAIpQLScNh5yXQHLVwZ_We1_pBTGxosNFiOfstCpq-W4sLG3K9dWiWg/viewform?usp=dialog"
 %}
+{:.space}
+{% include hr.html %}
 
 <!-- MECHANICAL DEPT. -->
-
 <!-- water rocket -->
 {%
     include event.html
-    one_line_caption="XXX"
-    description="XXX"
-    event_type="XXX"
-    header="https://forms.gle/15LjE55BB6QKGtwFA"
-    url=""
+    one_line_caption="Launch into the skies – Defy gravity with water power!"
+    description="Experience the thrill of rocketry with just water and air! Design, build, and launch your own water-powered rocket to achieve maximum altitude and precision. Compete against the best and test your engineering and physics skills in this high-flying challenge!"
+    event_type="Solo"
+    header="/assets/headers/tech/water.gif"
+    url="https://forms.gle/15LjE55BB6QKGtwFA"
 %}
+{:.space}
+{% include hr.html %}
 
 <!-- cad designing -->
 {%
     include event.html
-    one_line_caption="XXX"
-    description="XXX"
+    one_line_caption="Design. Innovate. Create – Master the art of CAD!"
+    description="Step into the world of precision and creativity with our CAD Design event! Showcase your skills in computer-aided design, craft intricate models, and bring your engineering visions to life. Whether you're a beginner or a pro, this is your chance to compete, learn, and innovate!"
     event_type="XXX"
-    header=""
+    header="/assets/headers/tech/cad.gif"
     url="https://forms.gle/ysHst474uKVamJXK7"
 %}

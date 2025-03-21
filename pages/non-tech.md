@@ -94,7 +94,7 @@ Rules are present in the registration link.
     description="This thrilling team-based event features two rounds: an aptitude test followed by an adventurous scavenger hunt. Teams must solve clues, complete tasks, and race to find the ultimate treasure while following strict rules. The fastest and smartest team to uncover the treasure wins!"
     event_type="Solo"
     header="/assets/headers/non_tech/trail.gif"
-    url=""
+    url="https://docs.google.com/forms/d/e/1FAIpQLSfzDoO9eSnWZ76FzrT1zYRwyIrFij5wtVuP10v1Hou0Pgm1CA/viewform?pli=1"
 %}
 {:.space}
 {% include hr.html %}
@@ -108,16 +108,17 @@ Rules are present in the registration link.
     header="/assets/headers/non_tech/games.gif"
     url="https://docs.google.com/forms/d/1MftvinqRsLMizrZ7F8jTGeL7xsBUMzbROHlWSsrJiqg/edit"
 %}
-
+{:.space}
+{% include hr.html %}
 
 <!-- MECHANICAL DEPT. EVENTS -->
-<!-- event x x x -->
-<!-- {%
+<!-- on spot photography -->
+{%
     include event.html
-    one_line_caption="XXX"
-    description="XXX"
+    one_line_caption="Capture the moment, create a masterpiece!"
+    description="Unleash your creativity and capture stunning shots in real time! No filters, no edits—just raw talent and the perfect click. Let your lens tell a story and make every frame unforgettable!"
     event_type="XXX"
-    header=""
-    url=""
-%} -->
+    header="/assets/headers/non_tech/pics.gif"
+    url="https://forms.gle/a9JFciaWYVedHbTz6"
+%}
 
