@@ -1,9 +1,0 @@
-- cmd: ".greport bug"
-  alias: "r"
-  desc: "Send a bug to the dev if you find any."
-  cooldown: "Can be used 1 time every 20.0 seconds per user."
-
-- cmd: ".greport feedback"
-  alias: "fb"
-  desc: "Send a feedback to the dev if you want to."
-  cooldown: "Can be used 1 time every 20.0 seconds per user."

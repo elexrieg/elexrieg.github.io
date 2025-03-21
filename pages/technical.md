@@ -15,18 +15,15 @@ sidenav: false
 
 -->
 
-Rules are present in the registration link. Please click on the <span class="cb">register</span> button for respective events to read them.
+Tech Events Head: Yuvaraaj
+<br>
+Contact: 9884151490
+{:.go}
+
+Rules are present in the registration link.
 {:.info}
 
-Hover / Tap next to the <span class="cb">caption</span> of each event to anchor the link. Making it easy for you to copy links for particular events.
-{:.warning}
-<!-- using this for variety of colour -->
-
 <!-- paper fest -->
-
-LAST DATE FOR REGISTRATION FOR THE **BELOW EVENT**: <span class="cb">24 / 03 / 2025</span>
-{:.deprecated}
-<!-- using this `info` box for variety of colour -->
 {%
     include event.html
     one_line_caption="Innovate, Present, Inspire – Powering Ideas into Reality!"
@@ -78,9 +75,6 @@ LAST DATE FOR REGISTRATION FOR THE **BELOW EVENT**: <span class="cb">24 / 03 / 2
 {:.space}
 {% include hr.html %}
 
-LAST DATE FOR REGISTRATION FOR THE **BELOW EVENT**: <span class="cb">20 / 03 / 2025</span>
-{:.deprecated}
-<!-- using this `info` box for variety of colour -->
 <!-- spark tank -->
 {%
     include event.html

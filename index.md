@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Elexrieg'25 Home
-toc: true
+toc: false
 anchor: false
 sidenav: false
 ---
@@ -34,19 +34,16 @@ Make sure to **register online**, but don’t worry—**on-spot registrations** 
 All rules are present in the **Google Form**.
 {:.info}
 
-- Click on either <span class="cb">[Tech Events]</span> or <span class="cb">[Non-Tech Events]</span> above in the navigation.
+- Click on either <span class="cb">[Tech Events](/pages/technical.html)</span> or <span class="cb">[Non-Tech Events]</span> above in the navigation.
 - Scroll down below to view all the present events in the respected categories.
 - Click on <span class="cb">🖊️ Register</span> and fill out the Google Forms!
 
 # FAQ
-### When is the event?
-28 / 03 / 2025 from morning 10AM.
-
 ### Where is the college?
 **Address:** <span class="cb">[`Click Here`](https://maps.app.goo.gl/FM4SmuB6E7cDPfYw5)</span>
 
 ### Who do I contact in case I need help?
-{:.info Check the registration links for specific event heads.}
+Check the registration links for specific event heads.
 
 - **Name:** XXX
 - **Number:** XXX

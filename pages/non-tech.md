@@ -14,34 +14,13 @@ sidenav: false
 
 -->
 
-<!--
-    TODO
-        DESCRIPTION:
-            - Lip off and Guess it
-            - Let's Play Games
-        ONE LINE CAPTION:
-            - Lip off and Guess it
-            - Let's Play Games
-        EVENT TYPE:
-            - Lip off and Guess it
-            - Let's Play Games
-        PARTICIPANTS:
-            - Gully League
-            - Lip off and Guess it
-            - Let's Play Games
-        PICTURES:
-            - Lip off and Guess it
-            - Let's Play Games
-        URL:
-            - Everything lol
- -->
+Non-Tech Events Head: Monesh
+<br>
+Contact: 6381168125
+{:.go}
 
-Rules are present in the registration link. Please click on the <span class="cb">register</span> button for respective events to read them.
+Rules are present in the registration link.
 {:.info}
-
-Hover / Tap next to the <span class="cb">caption</span> of each event to anchor the link. Making it easy for you to copy links for particular events.
-{:.warning}
-<!-- using this for variety of colour -->
 
 <!-- e-sports -->
 {%
