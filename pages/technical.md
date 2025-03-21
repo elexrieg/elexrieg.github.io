@@ -17,7 +17,7 @@ sidenav: false
 
 Tech Events Head: Yuvaraaj
 <br>
-Contact: 9884151490
+Contact: <a href="tel:9884151490">9884151490</a>
 {:.go}
 
 Rules are present in the registration link.
@@ -84,4 +84,38 @@ Rules are present in the registration link.
     participants_per_team="Upto 3 people."
     header="/assets/headers/tech/spark_tank.gif"
     url="https://forms.gle/guub7anCbWUo2718A"
+%}
+{:.space}
+{% include hr.html %}
+
+<!-- pywars -->
+{%
+    include event.html
+    one_line_caption="XXX"
+    description="XXX"
+    event_type="Solo"
+    header="/assets/headers/tech/pywars.gif"
+    url=""
+%}
+
+<!-- MECHANICAL DEPT. -->
+
+<!-- water rocket -->
+{%
+    include event.html
+    one_line_caption="XXX"
+    description="XXX"
+    event_type="XXX"
+    header="https://forms.gle/15LjE55BB6QKGtwFA"
+    url=""
+%}
+
+<!-- cad designing -->
+{%
+    include event.html
+    one_line_caption="XXX"
+    description="XXX"
+    event_type="XXX"
+    header=""
+    url="https://forms.gle/ysHst474uKVamJXK7"
 %}

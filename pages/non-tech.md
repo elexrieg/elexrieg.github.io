@@ -16,7 +16,7 @@ sidenav: false
 
 Non-Tech Events Head: Monesh
 <br>
-Contact: 6381168125
+Contact: <a href="tel:6381168125">+91 6381168125</a>
 {:.go}
 
 Rules are present in the registration link.
@@ -82,6 +82,18 @@ Rules are present in the registration link.
     event_type="Team"
     participants_per_team="2 members"
     header="/assets/headers/non_tech/lip_off.gif"
+    url="https://forms.gle/zskSBZTJDm3GqjZb8"
+%}
+{:.space}
+{% include hr.html %}
+
+<!-- mystery trail -->
+{%
+    include event.html
+    one_line_caption="Hunt, Solve, Conquer – The treasure awaits!"
+    description="This thrilling team-based event features two rounds: an aptitude test followed by an adventurous scavenger hunt. Teams must solve clues, complete tasks, and race to find the ultimate treasure while following strict rules. The fastest and smartest team to uncover the treasure wins!"
+    event_type="Solo"
+    header="/assets/headers/non_tech/trail.gif"
     url=""
 %}
 {:.space}
@@ -90,11 +102,22 @@ Rules are present in the registration link.
 <!-- let's play games -->
 {%
     include event.html
+    one_line_caption="Get ready to play, compete, and have fun! Join us for an exciting Let’s Play Games event!"
+    description="Join us for a fun-filled event where you can challenge friends, test your skills, and enjoy a variety of exciting games! Whether you love board games, video games, or classic party games, there’s something for everyone. Come compete, collaborate, and most importantly—have a great time!"
+    event_type="Solo"
+    header="/assets/headers/non_tech/games.gif"
+    url="https://docs.google.com/forms/d/1MftvinqRsLMizrZ7F8jTGeL7xsBUMzbROHlWSsrJiqg/edit"
+%}
+
+
+<!-- MECHANICAL DEPT. EVENTS -->
+<!-- event x x x -->
+<!-- {%
+    include event.html
     one_line_caption="XXX"
     description="XXX"
     event_type="XXX"
     header=""
     url=""
-%}
-{:.space}
-{% include hr.html %}
+%} -->
+

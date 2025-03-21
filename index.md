@@ -45,5 +45,7 @@ All rules are present in the **Google Form**.
 ### Who do I contact in case I need help?
 Check the registration links for specific event heads.
 
-- **Name:** XXX
-- **Number:** XXX
+- PRESIDENT: Reshma - <a href="tel:9176138432">+91 9176138432</a>
+- SECRETARY: Mukilan - <a href="tel:9499946015">+91 9499946015</a>
+- TECH EVENTS HEAD: Yuvaraaj - <a href="tel:9884151490">+91 9884151490</a>
+- NON TECH EVENTS HEAD: Monesh - <a href="tel:6381168125">+91 6381168125</a>
