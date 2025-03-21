@@ -10,13 +10,11 @@
 @import "meta/diff.scss";
 @import "meta/box-1.scss";
 @import "meta/purple.scss";
-@import "meta/venture.scss";
 @import "meta/paginate.scss";
 @import "meta/codeblock.scss";
-@import "meta/tech-stack.scss";
 
-// discord bot docs styles
-@import "bot/command.scss";
+// event rules and stuff
+@import "symposium/event.scss";
 
 // blog related
 @import "blog/card.scss";

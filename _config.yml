@@ -2,9 +2,3 @@ markdown: kramdown
 kramdown:
   input: GFM
   syntax_highlighter: rouge
-
-collections:
-  geralt-docs:
-    output: true
-
-collections_dir: pages

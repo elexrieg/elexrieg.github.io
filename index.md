@@ -1,66 +1,52 @@
 ---
 layout: default
-title: Home
-toc: false
+title: Elexrieg'25 Home
+toc: true
 anchor: false
 sidenav: false
 ---
+# What is it About?
 
-# Hello World
-Welcome to my world! This is a place where I blog sometimes regarding mostly on technology and the environment. Enjoy your stay ✨✨
+{%
+    include image.html
+    src="/assets/images/invitation.gif"
+    caption="Hover / tap on it to expand the invitation"
+%}
 
-## Tech Stack
-A small legend for the below list:
-<br>[ <span class="diff-knowledge">+</span> -- how much I know ]
-<br>[ <span class="diff-practical">-</span> -- how much I've used ]
-<br> all values are out of 6.
+<span class="cb">28th March 2025</span> from morning 10AM are the timings for symposium!
 {:.info}
 
-I learn new stuff as I'm either interested in them or I need to use them in my life. Languages and stuff
-<div class="box-1">
-    <ul>
-        <li class="li-stack">
-            <span class="li-lang">C</span>
-            <span class="li-worked-with">[<span class="diff-knowledge">++++</span><span class="diff-practical">--</span>]</span>
-        </li>
-        <li class="li-stack">
-            <span class="li-lang">C++</span>
-            <span class="li-worked-with">[<span class="diff-knowledge">++</span><span class="diff-practical">-</span>]</span>
-        </li>
-        <li class="li-stack">
-            <span class="li-lang">ESP32</span>
-            <span class="li-worked-with">[<span class="diff-knowledge">++++</span><span class="diff-practical">----</span>]</span>
-        </li>
-        <li class="li-stack">
-            <span class="li-lang">Python</span>
-            <span class="li-worked-with">[<span class="diff-knowledge">++++++</span><span class="diff-practical">-----</span>]</span>
-        </li>
-        <li class="li-stack">
-            <span class="li-lang">PostgreSQL</span>
-            <span class="li-worked-with">[<span class="diff-knowledge">++</span><span class="diff-practical">---</span>]</span>
-        </li>
-        <li class="li-stack">
-            <span class="li-lang">React-Native</span>
-            <span class="li-worked-with">[<span class="diff-knowledge">+++</span><span class="diff-practical">--</span>]</span>
-        </li>
-    </ul>
-</div>
+Prizes and Certificates await 👀👀👀!!!
+{:.info}
 
-<div class="space"></div>
-When it comes to tools I use:
-<div class="box-1">
-    <ul>
-        <li class="li-stack">
-            <span class="li-lang">Git</span>
-            <span class="li-worked-with">[<span class="diff-knowledge">++</span><span class="diff-practical">----</span>]</span>
-        </li>
-        <li class="li-stack">
-            <span class="li-lang">Neovim && Visual Studio Code</span>
-            <span class="li-worked-with">[<span class="diff-knowledge">++</span><span class="diff-practical">----</span>]</span>
-        </li>
-        <li class="li-stack">
-            <span class="li-lang">Windows && Arch dual boot</span>
-            <span class="li-worked-with">[<span class="diff-knowledge">+++</span><span class="diff-practical">-----</span>]</span>
-        </li>
-    </ul>
-</div>
+A state level symposium conducted by 2 departments <span class="cb">(ECE && EEE)</span> hosted by <span class="fc">MNM Jain Engineering College</span> here in Chennai!
+
+**Address:** <span class="cb">[`Click Here`](https://maps.app.goo.gl/FM4SmuB6E7cDPfYw5)</span>
+
+## Events Present
+Elexrieg is a perfect mix of **fun and intellect**, offering a range of **technical and non-technical events** to suit everyone’s interests. 
+
+Whether you want to **enjoy, compete, or challenge your skills**, we’ve got something for you!  
+
+Make sure to **register online**, but don’t worry—**on-spot registrations** are available for select events! 🚀
+
+## How to Register?
+All rules are present in the **Google Form**.
+{:.info}
+
+- Click on either <span class="cb">[Tech Events]</span> or <span class="cb">[Non-Tech Events]</span> above in the navigation.
+- Scroll down below to view all the present events in the respected categories.
+- Click on <span class="cb">🖊️ Register</span> and fill out the Google Forms!
+
+# FAQ
+### When is the event?
+28 / 03 / 2025 from morning 10AM.
+
+### Where is the college?
+**Address:** <span class="cb">[`Click Here`](https://maps.app.goo.gl/FM4SmuB6E7cDPfYw5)</span>
+
+### Who do I contact in case I need help?
+{:.info Check the registration links for specific event heads.}
+
+- **Name:** XXX
+- **Number:** XXX

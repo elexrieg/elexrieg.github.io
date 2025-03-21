@@ -1,5 +1,5 @@
 .figure {
-    width: 100%;
+    width: auto;
     color: white;
     display: flex;
     flex-direction: column;
@@ -7,11 +7,10 @@
     justify-content: center;
     margin: 0 auto;
     padding: 10px;
-    background-color: rgb(44, 53, 102);
+    background-color: rgb(21, 25, 49);
 
     .image {
         width: 100%;
-        max-width: 600px; // Adjust as needed
 
         img {
             width: 100%;
@@ -25,8 +24,20 @@
     }
 
     .caption {
-        margin-top: 10px; // Adjust as needed
-        font-size: 16px; // Adjust as needed
+        margin-top: 10px;
+        font-size: 16px;
         text-align: center;
+    }
+
+    @media only screen and (max-width: 576px) {
+        .figure {
+            width: auto;
+            padding: 1px;
+
+            .image {
+                width: auto;
+                height: auto;
+            }
+        }
     }
 }

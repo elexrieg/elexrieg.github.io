@@ -1,0 +1,24 @@
+<div class="event">
+    <div class="e-info">
+        <div class="e-media-wrapper">
+            <div class="e-media" style="background-image: url('{{ include.header }}');"></div>
+        </div>
+        <h4 id="{{ include.one_line_caption | slugify }}">{{ include.one_line_caption }}</h4>
+        {% include hr.html %}
+        <span class="e-type"><strong>Event Type:</strong> {{ include.event_type }}</span>
+        {% if include.event_type == "Team" %}
+            <br>
+            <span class="e-team-participants"><strong>Participants per Team:</strong> {{ include.participants_per_team }}</span>
+        {% endif %}
+        <div class="space"></div>
+        <div class="e-description-wrapper">
+            <div class="e-description-content">
+                {{ include.description }}
+            </div>
+        </div>
+        <div class="space"></div>
+        <div class="e-register-and-anchor">
+            <a href="{{ include.url }}" target="_blank" class="e-link">🖊️ Register</a>
+        </div>
+    </div>
+</div>

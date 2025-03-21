@@ -1,10 +1,6 @@
 - name: Home
   link: /
-- name: About Me
-  link: /pages/about.html
-- name: Blog
-  link: /pages/blog.html
-- name: Ventures
-  link: /pages/ventures.html
-- name: GitHub
-  link: https://github.com/bsod2528
+- name: Tech Events
+  link: /pages/technical.html
+- name: Non-Tech Events
+  link: /pages/non-tech.html
