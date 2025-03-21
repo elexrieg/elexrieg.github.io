@@ -11,6 +11,15 @@ Since this event is conducted by both EEE and ECE departments, the future batche
 - Jekyll allows easy generation of static web-pages as we don't have to write "proper" `html` and `css` for this.
 - All we need to do is write base code in `html` and `css` (ironic) and the rest in `.md` which is Markdown.
 
+## Hosting
+
+- Due to dependency issues with GitHub Pages, the hosting is done on Vercel.
+- Currently, the website is being hosted by [@bsod2528](github.com/bsod2528)'s vercel account.
+- To host it next time or to update the repo! You must please host it from you're personal vercel account as after 2025's event, this website will be taken down. Code will be present.
+- In order to make changes to the live website, just keep updating this repo!
+
+---
+
 ## To Understand Jekyll
 There are no tutorials out there to understand this. So read from the actual Jekyll documentation. It's pretty straight forward.
 
