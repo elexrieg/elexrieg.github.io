@@ -24,48 +24,63 @@
         <meta property="twitter:description" content="a state level technical event &#9883;">
         <meta property="twitter:image" content="https://elexrieg.github.io/media/embed.jpeg">
 
-        <link rel="icon" type="image" href="/assets/images/cpu.ico">
-        <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+        <link rel="icon" type="image" href="assets/images/cpu.ico">
+        <link rel="stylesheet" type="text/css" href="assets/css/styles.css">
 
         <!-- analytics -->
         <!-- nope not adding it here. -->
 
-        <title>{{ page.title }}</title>
+        <title>Archive</title>
     </head>
     <body>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <div class="container">
             <div class="space"></div>
             <div class="mobo">
-                <a href="/#"><img class="mobo" src="/assets/images/mobo.png"></a>
+                <a href="/#"><img class="mobo" src="assets/images/mobo.png"></a>
             </div>
             <div class="space"></div>
             <div class="child-container">
                 <div class="sidenav">
-                    {% if page.sidenav %}
-                        {% include sidenav.html collection=page.collection %}
-                    {% endif %}
+                    
                 </div>
                 <div class="content">
-                    {% include navigation.html %}
-                    {% if page.anchor %}
-                        {% include anchor_headings.html html=content anchorBody="&#x1F517;" anchorClass="anchor" %}
-                    {% else %}
-                        {{ content }}
-                    {% endif %}
+                    <nav>
+    
+    <a href="/" >
+        Home
+    </a>
+    
+    <a href="pages/technical.html" >
+        Tech Events
+    </a>
+    
+    <a href="pages/non-tech.html" >
+        Non-Tech Events
+    </a>
+    
+</nav>
+
+                    
+                        <ul>
+    
+    </ul>
+<p>&lt;/ul&gt;</p>
+
+                    
                     <hr>
                     <div class="footer">
                         With <span class="heart">&#128156;</span> -- EEE && ECE Depts.
                     </div>
                 </div>
                 <div class="toc">
-                    {% if page.toc %}
-                        {% include toc.html html=content class="table-of-contents" %}
-                    {% endif %}
+                    
+                        
+                    
                 </div>
             </div>
         </div>
-        <script src="/assets/js/scroll.js"></script>
-        <script src="/assets/js/responsive.js"></script>
+        <script src="assets/js/scroll.js"></script>
+        <script src="assets/js/responsive.js"></script>
     </body>
 </html>

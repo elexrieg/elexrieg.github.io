@@ -16,6 +16,10 @@ Since this event is conducted by both EEE and ECE departments, the future batche
 - Due to dependency issues with GitHub Pages, the hosting is done on Vercel.
 - Currently, the website is being hosted by [@bsod2528](github.com/bsod2528)'s vercel account.
 - To host it next time or to update the repo! You must please host it from you're personal vercel account as after 2025's event, this website will be taken down. Code will be present.
+
+### Setup
+- Fork this repo and ensure the owner is you (personal user) and not the organisation.
+- Link the forked repo to your vercel account.
 - In order to make changes to the live website, just keep updating this repo!
 
 ---
