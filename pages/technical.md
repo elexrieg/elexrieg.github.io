@@ -31,7 +31,7 @@ Rules are present in the registration link.
     event_type="Team"
     participants_per_team="Upto 3 people."
     header="/assets/headers/tech/paper_fest.gif"
-    url="https://docs.google.com/forms/d/e/1FAIpQLSeFYZtPasNDfXpQXC3KO1Ryz4767kjUVMefe3bh7R-PgmHnQA/viewform?usp=sharing"
+    url="https://forms.gle/xg6d3hvvJaGD5uEQ8"
 %}
 {:.space}
 {% include hr.html %}
